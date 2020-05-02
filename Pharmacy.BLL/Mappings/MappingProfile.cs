@@ -3,7 +3,6 @@ using AutoMapper;
 using Pharmacy.Mappings.Resolvers;
 using Pharmacy.Models;
 using Pharmacy.Models.DTO;
-using Pharmacy.ViewModels;
 
 
 namespace Pharmacy.Mappings
