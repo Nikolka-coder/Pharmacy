@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Pharmacy.Models;
 using Pharmacy.Services.Interfaces;
-using Pharmacy.ViewModels;
 
 namespace Pharmacy.Mappings.Resolvers
 {

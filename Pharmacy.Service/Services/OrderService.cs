@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Pharmacy.Models;
 using Pharmacy.Repositories.Interfaces;
 using Pharmacy.Services.Interfaces;
-using Pharmacy.ViewModels;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

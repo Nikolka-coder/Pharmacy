@@ -5,9 +5,13 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy", "Pharmacy\Pharmacy.csproj", "{AA15F819-86F1-47EC-BDC9-5AF194C756C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.BLL", "Pharmacy.BLL\Pharmacy.BLL.csproj", "{CC88B12C-9594-4923-BB88-305C0BA33EAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.BLL", "Pharmacy.BLL\Pharmacy.BLL.csproj", "{CC88B12C-9594-4923-BB88-305C0BA33EAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.DAL", "Pharmacy.DAL\Pharmacy.DAL.csproj", "{111F1B97-1485-4D8B-889D-975F11B2D1D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.DAL", "Pharmacy.DAL\Pharmacy.DAL.csproj", "{111F1B97-1485-4D8B-889D-975F11B2D1D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Service", "Pharmacy.Service\Pharmacy.Service.csproj", "{50FC75A5-888B-4C67-B4C2-C3DAF75E929B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Mapper", "Pharmacy.Mapper\Pharmacy.Mapper.csproj", "{CE5131EC-2972-4EFB-8086-73C8A10C49B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{111F1B97-1485-4D8B-889D-975F11B2D1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{111F1B97-1485-4D8B-889D-975F11B2D1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{111F1B97-1485-4D8B-889D-975F11B2D1D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50FC75A5-888B-4C67-B4C2-C3DAF75E929B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50FC75A5-888B-4C67-B4C2-C3DAF75E929B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50FC75A5-888B-4C67-B4C2-C3DAF75E929B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50FC75A5-888B-4C67-B4C2-C3DAF75E929B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5131EC-2972-4EFB-8086-73C8A10C49B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5131EC-2972-4EFB-8086-73C8A10C49B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5131EC-2972-4EFB-8086-73C8A10C49B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5131EC-2972-4EFB-8086-73C8A10C49B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
