@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Pharmacy.Mapper\Pharmacy.Mapper.csproj" />
-    <ProjectReference Include="..\Pharmacy.Service\Pharmacy.Service.csproj" />
+    <ProjectReference Include="..\Pharmacy.Service\Pharmacy.BLL.csproj" />
   </ItemGroup>
 
 </Project>

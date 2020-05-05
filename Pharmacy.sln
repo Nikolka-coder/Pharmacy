@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy", "Pharmacy\Pharma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.DAL", "Pharmacy.DAL\Pharmacy.DAL.csproj", "{111F1B97-1485-4D8B-889D-975F11B2D1D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Service", "Pharmacy.Service\Pharmacy.Service.csproj", "{50FC75A5-888B-4C67-B4C2-C3DAF75E929B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.BLL", "Pharmacy.Service\Pharmacy.BLL.csproj", "{50FC75A5-888B-4C67-B4C2-C3DAF75E929B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Mapper", "Pharmacy.Mapper\Pharmacy.Mapper.csproj", "{CE5131EC-2972-4EFB-8086-73C8A10C49B2}"
 EndProject

@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Pharmacy.DAL\Pharmacy.DAL.csproj" />
-    <ProjectReference Include="..\Pharmacy.Service\Pharmacy.Service.csproj" />
+    <ProjectReference Include="..\Pharmacy.Service\Pharmacy.BLL.csproj" />
   </ItemGroup>
 
 </Project>
