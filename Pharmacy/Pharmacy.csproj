@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Pharmacy.BLL\Pharmacy.BLL.csproj" />
     <ProjectReference Include="..\Pharmacy.Mapper\Pharmacy.Mapper.csproj" />
     <ProjectReference Include="..\Pharmacy.Service\Pharmacy.Service.csproj" />
   </ItemGroup>

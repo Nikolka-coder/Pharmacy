@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Pharmacy.Mappings;
@@ -12,18 +13,13 @@ namespace Pharmacy.Helpers
 {
     public static class AppSetup
     {
-        public static void ConfigureAppByDefault(this IServiceCollection services, IConfiguration configuration)
-        {
-            AddDatabaseAndIdentity(services, configuration);
-            AddDI(services);
-            services.AddMvc();
-        }
+       
 
-        private static void AddDatabaseAndIdentity(this IServiceCollection services, IConfiguration configuration) =>
+        public static void AddDatabaseAndIdentity(this IServiceCollection services, IConfiguration configuration) =>
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
-        private static void AddDI(this IServiceCollection services)
+        public static void AddDI(this IServiceCollection services)
         {
             services.AddScoped<IMedicineRepository, MedicineRepository>();
             services.AddScoped<IPrescriptionRepository, PrescriptionRepository>();

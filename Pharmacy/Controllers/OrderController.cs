@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Pharmacy.DAL.Models.DTO;
 using Pharmacy.Services.Interfaces;
 using Pharmacy.ViewModels;
 using System.Threading.Tasks;
@@ -26,7 +27,7 @@ namespace Pharmacy.Controllers
         public async Task<IActionResult> Create() => await Task.Run(() => View());
 
         [HttpPost]
-        public async Task<IActionResult> Create(OrderCreateViewModel orderCreateViewModel)
+        public async Task<IActionResult> Create(OrderCreate orderCreateViewModel)
         {
             if (ModelState.IsValid)
             {
