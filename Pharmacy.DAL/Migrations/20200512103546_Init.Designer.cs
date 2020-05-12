@@ -7,17 +7,17 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Pharmacy.Models;
 
-namespace Pharmacy.Migrations
+namespace Pharmacy.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20190711105454_OrderModelChanges5")]
-    partial class OrderModelChanges5
+    [Migration("20200512103546_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
+                .HasAnnotation("ProductVersion", "5.0.0-preview.3.20181.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -25,21 +25,27 @@ namespace Pharmacy.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Amount");
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
 
                     b.Property<string>("Manufacturer")
                         .IsRequired()
+                        .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
-                    b.Property<double>("Price");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
-                    b.Property<bool>("WithPrescription");
+                    b.Property<bool>("WithPrescription")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -50,17 +56,23 @@ namespace Pharmacy.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Amount");
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("Date");
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
 
-                    b.Property<int>("MedicineId");
+                    b.Property<int>("MedicineId")
+                        .HasColumnType("int");
 
-                    b.Property<double>("OrderCost");
+                    b.Property<double>("OrderCost")
+                        .HasColumnType("float");
 
-                    b.Property<int?>("PrescriptionId");
+                    b.Property<int?>("PrescriptionId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -71,17 +83,22 @@ namespace Pharmacy.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
+                        .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
-                    b.Property<int>("MedicineId");
+                    b.Property<int>("MedicineId")
+                        .HasColumnType("int");
 
-                    b.Property<long>("Pesel");
+                    b.Property<long>("Pesel")
+                        .HasColumnType("bigint");
 
-                    b.Property<long>("PrescriptionNumber");
+                    b.Property<long>("PrescriptionNumber")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
